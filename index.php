@@ -32,8 +32,8 @@
         </ul>
 
         <div class="menu-contato">
-            <p class="item-telefone"><strong>&#9990</strong> (34) 9 9155-9881</p>
-            <p class="item-contato"><strong>&#x00040</strong> contato@korbansolucoes.com.br</p>
+            <p class="item-telefone"><strong>&#9990</strong> (99) 9 99999-9999</p>
+            <p class="item-contato"><strong></strong> contato@korbansolucoes.com.br</p>
         </div>
 
     </nav>
@@ -306,7 +306,7 @@
             <h1>Sobre</h1>
             <p>A <span style="color: #2f8cb1; font-weight: bold;">Korban</span> nasceu com o
                 objetivo de prover soluções tecnológicas para seus clientes, para que, por meio
-                das nossas soluções, sua empresa estabeleça a credibilidade necessária para o
+                das nossas soluções, sua empresa estabeleça no mercado a credibilidade necessária para o
                 seu negócio.</p>
         </div>
     </div>
@@ -321,10 +321,15 @@
         </div>
 
         <div class="dados-cadastrais">
-            <pre>&#9742; (34) 9 8851-9380    |    Uberlândia    |    MG</pre>
+            <pre>&#9742; (99) 9 9999-99999    |    Cidade    |    UF</pre>
         </div>
 
+    <!--INICIO ICONES REDES SOCIAIS-->
+
         <div class="redes-sociais">
+            
+            <!--icone linkedin-->
+            
             <svg enable-background="new 0 0 128 128" height="128px" id="Layer_1" version="1.1"
                 viewBox="0 0 128 128" width="128px" xml:space="preserve"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -337,6 +342,8 @@
                         fill="#FFFFFF" />
                 </g>
             </svg>
+            
+            <!--icone instagram-->
 
             <svg id="icon-instagram" style="enable-background:new 0 0 1000 1000;" version="1.1"
                 viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
@@ -378,6 +385,8 @@
                     <circle class="st1" cx="682.2" cy="317.8" r="41" />
                 </g>
             </svg>
+            
+            <!--icone facebook-->
 
             <svg height="100%"
                 style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
@@ -393,6 +402,8 @@
                         style="fill:#fff;fill-rule:nonzero;" />
                 </g>
             </svg>
+            
+            <!--FIM ICONES REDES SOCIAIS-->
 
         </div>
     </div>
@@ -410,7 +421,7 @@
     <!-- ICONE WHATSAPP-->
     <div id="whats-icon">
 
-        <a href="https://web.whatsapp.com/send?phone=5534988519380" target="_blank">
+        <a href="https://www.korbansolucoes.com.br" target="_blank">
             <img src="IMG/logo-whatsapp.png">
         </a>
     </div>
