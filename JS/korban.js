@@ -79,12 +79,11 @@ campoTelefone.addEventListener('focusout', (event) => {
     }
 })
 
-// SCROLL
+// SCROLL BOTOES
 
 function deslizarPara(element) {
     document.querySelector(element).scrollIntoView({ behavior: "smooth" });
 }
-
 
 document.querySelector('#menu-sobre').addEventListener('click', function () {
     deslizarPara('#area-empresa');
@@ -96,14 +95,25 @@ document.querySelector('#menu-servico').addEventListener('click', function () {
 
 document.querySelector('#menu-orcamento').addEventListener('click', function () {
     deslizarPara('#form-contato-orcamento');
-    // document.querySelector('#menu-orcamento').style.backgroundColor = '#3CB4C5';
 })
 
 document.querySelector('#menu-contato').addEventListener('click', function () {
     deslizarPara('#form-contato-orcamento');
 })
 
-// SCROLL
+document.querySelector('#btnOrcamento').addEventListener('click', function () {
+    deslizarPara('#form-contato-orcamento');
+})
+
+document.querySelector('#btnOrcamento2').addEventListener('click', function () {
+    deslizarPara('#form-contato-orcamento');
+})
+
+document.querySelector('#btnOrcamento3').addEventListener('click', function () {
+    deslizarPara('#form-contato-orcamento');
+})
+
+// SCROLL 
 
 let sobre = document.querySelector('#menu-sobre');
 let site = document.querySelector('#menu-servico');
@@ -113,17 +123,17 @@ let contato = document.querySelector('#menu-contato');
 window.onscroll = function () { scrollar() };
 
 function scrollar() {
-    if (scrollY >= 550 && scrollY <= 886) {
+    if (scrollY >= 821 && scrollY <= 1254) {
         site.style.backgroundColor = 'white';
         orcamento.style.backgroundColor = 'white';
         contato.style.backgroundColor = 'white';
         sobre.style.backgroundColor = '#c4e8ed';
-    } else if (scrollY >= 1574 && scrollY <= 1904) {
+    } else if (scrollY >= 2454 && scrollY <= 2924) {
         orcamento.style.backgroundColor = 'white';
         contato.style.backgroundColor = 'white';
         site.style.backgroundColor = '#c4e8ed';
         sobre.style.backgroundColor = 'white';
-    } else if (scrollY >= 1982 && scrollY <= 2607) {
+    } else if (scrollY >= 3138 && scrollY <= 3922) {
         sobre.style.backgroundColor = 'white';
         site.style.backgroundColor = 'white';
         orcamento.style.backgroundColor = '#c4e8ed';
@@ -138,6 +148,3 @@ function scrollar() {
     console.log(scrollY);
 
 }
-
-
-
