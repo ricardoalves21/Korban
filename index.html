@@ -25,10 +25,10 @@
         </div>
 
         <ul class="menu-principal">
-            <li><a href="#area-empresa" id="menu-sobre">Sobre</a></li>
-            <li><a href="#sites" id="menu-servico">Criação de Sites</a></li>
-            <li><a href="#contato" id="menu-orcamento">Orçamento</a></li>
-            <li><a href="#contato" id="menu-contato">Contato</a></li>
+            <li><a id="menu-sobre">Sobre</a></li>
+            <li><a id="menu-servico">Criação de Sites</a></li>
+            <li><a id="menu-orcamento">Orçamento</a></li>
+            <li><a id="menu-contato">Contato</a></li>
         </ul>
 
         <div class="menu-contato">
@@ -185,17 +185,21 @@
 
     </div>
 
-    <!--INICIO BACKGROUND HOME-->
-    <div class="container-bg-home">
-        <div class="bg-home"></div>
-        <div class="txt-bg-home">
-            <h1><span style="color: #68BC03;">Planejamos e Construimos </span> para você um
-                site<br>moderno e eficiente para alavancar seus negócios!</h1>
-            <p></p>
-            <a class="btn-bg-home" href="#">Venha Conferir</a>
+    <!-- INICIO EMPRESA -->
+
+    <div id="area-empresa">
+        <div class="bg-empresa"></div>
+        <div class="area-txt-empresa">
+            <h1>Sobre</h1>
+            <p>A <span style="color: #2f8cb1; font-weight: bold;">Korban</span> nasceu com o
+                objetivo de prover soluções tecnológicas para seus clientes, para que, por meio
+                das nossas soluções, sua empresa estabeleça no mercado a credibilidade necessária
+                para o
+                seu negócio.</p>
         </div>
     </div>
-    <!--FIM BACKGROUND HOME-->
+
+    <!-- TERMINO EMPRESA -->
 
     <!--INICIO DEPOIMENTOS HOME-->
     <div class="container-depoimentos-home">
@@ -243,75 +247,77 @@
             unset ($_SESSION['msg']);
         }
     ?>
-    <form class="form-contact" id="contato" method="post" action="form.php">
-        <h2><span style="color: #2f8cb1;">FORMULÁRIO PARA CONTATO</span></h2>
 
-        <div class="form-group">
+    <div id="form-contato-orcamento">
+        <form class="form-contact" id="contato" method="post" action="form.php">
+            <h2 id="titulo-formulario"><span style="color: #2f8cb1;">ORÇAMENTO &nbsp &nbsp | &nbsp
+                    &nbsp
+                    CONTATO</span></h2>
 
-            <div class="form-dados">
+            <div class="form-group">
 
-                <div class="form-nome">
-                    <label for="inputNome" class="form-label">Nome</label>
-                    <div class="form-input">
-                        <input class="input-form" type="text" name="f-nome" id="inputNome"
-                            placeholder="seu nome">
+                <div class="form-dados">
+
+                    <div class="form-nome">
+                        <label for="inputNome" class="form-label">Nome</label>
+                        <div class="form-input">
+                            <input class="input-form" type="text" name="f-nome" id="inputNome"
+                                placeholder="seu nome">
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-email">
-                    <label for="inputEmail" class="form-label">E-mail</label>
-                    <div class="form-input">
-                        <input class="input-form" type="email" name="f-email" id="inputEmail"
-                            placeholder="seu melhor e-mail">
+                    <div class="form-email">
+                        <label for="inputEmail" class="form-label">E-mail</label>
+                        <div class="form-input">
+                            <input class="input-form" type="email" name="f-email" id="inputEmail"
+                                placeholder="seu melhor e-mail">
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-empresa">
-                    <label for="inputEmpresa" class="form-label">Empresa</label>
-                    <div class="form-input">
-                        <input class="input-form" type="text" name="f-empresa" id="inputEmpresa"
-                            placeholder="nome da sua empresa">
+                    <div class="form-empresa">
+                        <label for="inputEmpresa" class="form-label">Empresa</label>
+                        <div class="form-input">
+                            <input class="input-form" type="text" name="f-empresa" id="inputEmpresa"
+                                placeholder="nome da sua empresa">
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-telefone">
-                    <label for="inputTelefone" class="form-label">Telefone</label>
-                    <div class="form-input">
-                        <input class="input-form" type="tel" name="f-telefone" id="inputTelefone"
-                            maxlength="15" placeholder="(99) 9 9999-9999 ou (34) 3333-3333"
-                            required>
+                    <div class="form-telefone">
+                        <label for="inputTelefone" class="form-label">Telefone</label>
+                        <div class="form-input">
+                            <input class="input-form" type="tel" name="f-telefone"
+                                id="inputTelefone" maxlength="15"
+                                placeholder="(99) 9 9999-9999 ou (34) 3333-3333" required>
+                        </div>
                     </div>
+
+                    <div class="form-mensagem">
+                        <label for="inputMensagem" class="form-label">Mensagem</label><br>
+                        <textarea maxlength="230" id="textMensagem" name="textMensagem" rows="3"
+                            cols="80"></textarea>
+                    </div>
+
                 </div>
 
-                <div class="form-mensagem">
-                    <label for="inputMensagem" class="form-label">Mensagem</label><br>
-                    <textarea maxlength="230" id="textMensagem" name="textMensagem" rows="3"
-                        cols="80"></textarea>
-                </div>
+                <button class="btn-form" type="submit">Enviar</button>
 
             </div>
-
-            <button class="btn-form" type="submit">Enviar</button>
-
-        </div>
-    </form>
+        </form>
+    </div>
 
     <!--FIM FORMULARIO-->
 
-    <!-- INICIO EMPRESA -->
-
-    <div id="area-empresa">
-        <div class="bg-empresa"></div>
-        <div class="area-txt-empresa">
-            <h1>Sobre</h1>
-            <p>A <span style="color: #2f8cb1; font-weight: bold;">Korban</span> nasceu com o
-                objetivo de prover soluções tecnológicas para seus clientes, para que, por meio
-                das nossas soluções, sua empresa estabeleça no mercado a credibilidade necessária para o
-                seu negócio.</p>
+    <!--INICIO BACKGROUND HOME-->
+    <div class="container-bg-home">
+        <div class="bg-home"></div>
+        <div class="txt-bg-home">
+            <h1><span style="color: #68BC03;">Planejamos e Construimos </span> para você um
+                site<br>moderno e eficiente para alavancar seus negócios!</h1>
+            <p></p>
+            <a class="btn-bg-home" href="#">Venha Conferir</a>
         </div>
     </div>
-
-    <!-- TERMINO EMPRESA -->
+    <!--FIM BACKGROUND HOME-->
 
     <!--INICIO FOOTER-->
     <div class="footer">
@@ -324,12 +330,12 @@
             <pre>&#9742; (99) 9 9999-99999    |    Cidade    |    UF</pre>
         </div>
 
-    <!--INICIO ICONES REDES SOCIAIS-->
+        <!--INICIO ICONES REDES SOCIAIS-->
 
         <div class="redes-sociais">
-            
+
             <!--icone linkedin-->
-            
+
             <svg enable-background="new 0 0 128 128" height="128px" id="Layer_1" version="1.1"
                 viewBox="0 0 128 128" width="128px" xml:space="preserve"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -342,7 +348,7 @@
                         fill="#FFFFFF" />
                 </g>
             </svg>
-            
+
             <!--icone instagram-->
 
             <svg id="icon-instagram" style="enable-background:new 0 0 1000 1000;" version="1.1"
@@ -385,7 +391,7 @@
                     <circle class="st1" cx="682.2" cy="317.8" r="41" />
                 </g>
             </svg>
-            
+
             <!--icone facebook-->
 
             <svg height="100%"
@@ -402,7 +408,7 @@
                         style="fill:#fff;fill-rule:nonzero;" />
                 </g>
             </svg>
-            
+
             <!--FIM ICONES REDES SOCIAIS-->
 
         </div>

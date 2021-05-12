@@ -85,48 +85,59 @@ function deslizarPara(element) {
     document.querySelector(element).scrollIntoView({ behavior: "smooth" });
 }
 
+
 document.querySelector('#menu-sobre').addEventListener('click', function () {
-    event.preventDefault();
     deslizarPara('#area-empresa');
 })
 
 document.querySelector('#menu-servico').addEventListener('click', function () {
-    event.preventDefault();
-    deslizarPara('#sites');
+    deslizarPara('.container-depoimentos-home4');
 })
 
 document.querySelector('#menu-orcamento').addEventListener('click', function () {
-    event.preventDefault();
-    deslizarPara('#contato');
+    deslizarPara('#form-contato-orcamento');
+    // document.querySelector('#menu-orcamento').style.backgroundColor = '#3CB4C5';
 })
 
 document.querySelector('#menu-contato').addEventListener('click', function () {
-    event.preventDefault();
-    deslizarPara('#contato');
+    deslizarPara('#form-contato-orcamento');
 })
 
-// BOTAO TOPO
+// SCROLL
 
-// window.onscroll = function () { scrollar() };
+let sobre = document.querySelector('#menu-sobre');
+let site = document.querySelector('#menu-servico');
+let orcamento = document.querySelector('#menu-orcamento');
+let contato = document.querySelector('#menu-contato');
 
-// function scrollar() {
-//     let topo = document.querySelector('#voltar-topo');
-//     topo.style.animation = 'btnTopo linear 1s';
-//     console.log(scrollY);
-// }
+window.onscroll = function () { scrollar() };
 
-// let topo = document.querySelector('#menu-contato');
-// let scr = scrollY;
+function scrollar() {
+    if (scrollY >= 550 && scrollY <= 886) {
+        site.style.backgroundColor = 'white';
+        orcamento.style.backgroundColor = 'white';
+        contato.style.backgroundColor = 'white';
+        sobre.style.backgroundColor = '#c4e8ed';
+    } else if (scrollY >= 1574 && scrollY <= 1904) {
+        orcamento.style.backgroundColor = 'white';
+        contato.style.backgroundColor = 'white';
+        site.style.backgroundColor = '#c4e8ed';
+        sobre.style.backgroundColor = 'white';
+    } else if (scrollY >= 1982 && scrollY <= 2607) {
+        sobre.style.backgroundColor = 'white';
+        site.style.backgroundColor = 'white';
+        orcamento.style.backgroundColor = '#c4e8ed';
+        contato.style.backgroundColor = '#c4e8ed';
+    } else {
+        sobre.style.backgroundColor = 'white';
+        site.style.backgroundColor = 'white';
+        orcamento.style.backgroundColor = 'white';
+        contato.style.backgroundColor = 'white';
+    }
 
-// window.onscroll = function () { scrollar() };
+    console.log(scrollY);
 
-// function scrollar() {
-//     if (scrollY > 1) {
-//         topo.style.backgroundColor = 'yellow';
-//         console.log(scrollY);
-//         scrollY = 0;
-//     }
-// }
+}
 
 
 
