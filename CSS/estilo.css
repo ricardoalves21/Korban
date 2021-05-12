@@ -284,50 +284,53 @@ body {
 
 /* PLANO 1 */
 
-#plano-1 a p {
-    background-color: #3cb4c5;
+#btnOrcamento {
+    background-color: #3CB4C5;
     border-radius: 5px;
     padding: 5px;
     border: 1px solid transparent;
     width: 6vw;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
-#plano-1 a p:hover {
+#btnOrcamento:hover {
     background-color: #0b5a64;
+    cursor: pointer;
 }
 
 /* PLANO 2 */
 
-#plano-2 a p {
-    background-color: #c54d3c;
+#btnOrcamento2 {
+    background-color: #6DBD96;
     border-radius: 5px;
     padding: 5px;
     border: 1px solid transparent;
     width: 6vw;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
-#plano-2 a p:hover {
-    background-color: #81271b;
+#btnOrcamento2:hover {
+    background-color: #288759;
+    cursor: pointer;
 }
 
 /* PLANO 3 */
 
-#plano-3 a p {
-    background-color: #3cc54d;
+#btnOrcamento3 {
+    background-color: #A2C464;
     border-radius: 5px;
     padding: 5px;
     border: 1px solid transparent;
     width: 6vw;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
-#plano-3 a p:hover {
-    background-color: #06530f;
+#btnOrcamento3:hover {
+    background-color: #5b7b20;
+    cursor: pointer;
 }
 
 .seletores {
@@ -538,7 +541,7 @@ body {
 }
 
 #mini-banner-2:hover {
-    background-color: #55ff69;
+    background-color: #A2C464;
     transform: matrix(1.5);
     box-shadow: 0 0 5px 0 #8ef2ff inset, 0 0 5px 5px #98f3ff;
 }
@@ -597,7 +600,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: brightness(0.2);
+    filter: brightness(0.3);
     z-index: 0;
     box-shadow: 0 -4px 8px, 0 4px 5px rgb(126, 126, 126);
 }
@@ -621,7 +624,7 @@ body {
     padding: 7px;
     width: 9vw !important;
     text-align: center;
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
     text-decoration: none;
     color: white;
     margin-top: 4vh;
@@ -771,7 +774,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: brightness(0.2);
+    filter: brightness(0.3);
     position: absolute;
     z-index: 0;
     box-shadow: 0 -4px 7px rgb(83, 83, 83);
@@ -914,11 +917,11 @@ textarea {
 .btn-form {
     width: 10vw;
     height: 5vh;
-    border: 1px solid rgb(123, 123, 255);
-    border-radius: 0.7em;
+    border-radius: 0.5em;
     color: white;
-    background-color: #146a8b;
+    background-color: #005EAC;
     align-self: flex-end;
+    font-size: 1.1em;
 }
 
 .btn-form:hover {
@@ -966,7 +969,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: brightness(0.2);
+    filter: brightness(0.3);
     z-index: 0;
 }
 
@@ -985,7 +988,7 @@ textarea {
 
 .area-txt-empresa h1 {
     z-index: 10;
-    color: #2f8cb1;
+    color: #78cbd7;
 }
 
 .area-txt-empresa p {
@@ -1054,7 +1057,7 @@ textarea {
 
 .ass-footer a {
     text-decoration: none;
-    color: #2f8cb1;
+    color: #78cbd7;
 }
 
 .ass-footer a:hover {
@@ -1136,7 +1139,6 @@ textarea {
     .btn-bg-home {
         padding: 7px;
         width: 12vw;
-        font-size: 0.9rem;
     }
     .dp-cliente {
         font-size: 1rem;
