@@ -919,13 +919,13 @@ textarea {
     height: 5vh;
     border-radius: 0.5em;
     color: white;
-    background-color: #005EAC;
+    background-color: #008cff;
     align-self: flex-end;
     font-size: 1.1em;
 }
 
 .btn-form:hover {
-    background-color: rgb(0, 0, 141);
+    background-color: #005eac;
     cursor: pointer;
     color: white;
 }
@@ -1082,13 +1082,13 @@ textarea {
     }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1450px) {
     .menu-principal {
         font-weight: 600;
     }
     .menu ul li {
         width: 140px;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .item-telefone, .item-contato {
         font-size: 0.8rem;
@@ -1103,8 +1103,17 @@ textarea {
         font-size: 1rem;
     }
     #transp-1 {
-        line-height: 1.7rem;
+        line-height: 2.2rem;
     }
+
+    #transp-1 a {
+        font-size: 1.2em;
+    }
+
+    #btnOrcamento, #btnOrcamento2, #btnOrcamento3 {
+        font-size: 1em !important;
+    }
+
     #plano-1 a p {
         border-radius: 5px;
         padding: 5px;
@@ -1145,5 +1154,13 @@ textarea {
     }
     .titulo-depoimento {
         font-size: 0.8rem;
+    }
+
+    .btn-form {
+        font-size: 1em;
+    }
+
+    .btn-bg-home {
+        font-size: 1.2em !important;
     }
 }
