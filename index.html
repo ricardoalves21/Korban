@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="IMG/favicon-korban.png">
     <link rel="stylesheet" href="CSS/estilo.css" media="screen" />
+    <link rel="stylesheet" href="CSS/Teste.css" media="screen" />
+    <link rel="stylesheet" href="CSS/bootstrap.css" media="screen" />
+    <link rel="stylesheet" href="CSS/bootstrap-grid.css" media="screen" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
@@ -18,26 +21,33 @@
 <body>
 
     <!--INICIO MENU SUPERIOR-->
-    <nav class="menu" id="topo-home">
+    <nav class="col-sm-12">
+        <div class="container">
+            <div class="row">
 
-        <div class="menu-logo">
-            <a href="index.html">
-            <img src="./IMG/logo-korban2.png" alt="Logo">
-            </a>
+                <div class="col-sm-3">
+                    <p>
+                        <a href="index.html">
+                        <img src="./IMG/logo-korban2.png" alt="Logo">
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-sm-6">
+                    <p>
+                        <a href="#">Sobre</a>
+                        <a href="#">Criação de Sites</a>
+                        <a href="#">Orçamento</a>
+                        <a href="#">Contato</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-3">
+                    <p><strong>&#9990</strong> (34) 9 8851-9380</p>
+                </div>
+
+            </div>
         </div>
-
-        <ul class="menu-principal">
-            <li><a id="menu-sobre">Sobre</a></li>
-            <li><a id="menu-servico">Criação de Sites</a></li>
-            <li><a id="menu-orcamento">Orçamento</a></li>
-            <li><a id="menu-contato">Contato</a></li>
-        </ul>
-
-        <div class="menu-contato">
-            <p class="item-telefone"><strong>&#9990</strong> (99) 9 99999-9999</p>
-            <p class="item-contato"><strong></strong> contato@korbansolucoes.com.br</p>
-        </div>
-
     </nav>
     <!--FIM MENU SUPERIOR-->
 
@@ -45,61 +55,63 @@
     <div class="containner">
         <div id="imagem-banner-principal"></div>
         <div class="area-carousel">
-            <div id="transp-1">
-                <div id="textos-banner-principal">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div id="transp-1">
+                        <div id="textos-banner-principal">
 
-                    <div id="plano-1">
-                        <h1 id="titulo-1">Criação de Sites Profissionais!</h1><br>
-                        <p id="subtitulo-1">
-                            Design moderno <span style="color: #68BC03;">&#10004;</span><br>
-                            Alta tecnologia <span style="color: #68BC03;">&#10004;</span><br>
-                            Excelente performance <span style="color: #68BC03;">&#10004;</span>
-                        </p><br>
-                        <a href="#" id="botao-1">
-                            <p><a id="btnOrcamento">Orçamento</a></p>
-                        </a>
+                            <div id="plano-1">
+                                <h1 id="titulo-1">Criação de Sites Profissionais!</h1><br>
+                                <p id="subtitulo-1">
+                                    Design moderno <span style="color: #68BC03;">&#10004;</span><br>
+                                    Alta tecnologia <span style="color: #68BC03;">&#10004;</span><br>
+                                    Excelente performance <span style="color: #68BC03;">&#10004;</span>
+                                </p><br>
+                                <a href="#" id="botao-1">
+                                    <p><a id="btnOrcamento">Orçamento</a></p>
+                                </a>
+                            </div>
+
+                            <div id="plano-2">
+                                <h1 id="titulo-2">Sites com foco no visitante!</h1><br>
+                                <p id="subtitulo-2">
+                                    Sites responsivos <span style="color: #68BC03;">&#10004;</span><br>
+                                    Adaptados a smartphones e tablets <span
+                                        style="color: #68BC03;">&#10004;</span><br>
+                                    De fácil navegação <span style="color: #68BC03;">&#10004;</span>
+                                </p><br>
+                                <a href="#" id="botao-2">
+                                    <p><a id="btnOrcamento2">Orçamento</a></p>
+                                </a>
+                            </div>
+
+                            <div id="plano-3">
+                                <h1 id="titulo-3">Projetos sob medida!</h1><br>
+                                <p id="subtitulo-3">
+                                    Atinja os resultados que sua empresa precisa <span
+                                        style="color: #68BC03;">&#10004;</span><br>
+                                    Temos o melhor custo x benefício <span
+                                        style="color: #68BC03;">&#10004;</span><br>
+                                    Você vai se surpreender <span style="color: #68BC03;">&#10004;</span>
+                                </p><br>
+                                <a href="#" id="botao-3">
+                                    <p><a id="btnOrcamento3">Orçamento</a></p>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="seletores">
+                            <input onclick="selectText('1', '2', '3')" type="radio" name="seletor"
+                                id="seletor1">
+                            <input onclick="selectText('2', '3', '1')" type="radio" name="seletor"
+                                id="seletor2">
+                            <input onclick="selectText('3', '1', '2')" type="radio" name="seletor"
+                                id="seletor3">
+                        </div>
                     </div>
-
-                    <div id="plano-2">
-                        <h1 id="titulo-2">Sites com foco no visitante!</h1><br>
-                        <p id="subtitulo-2">
-                            Sites responsivos <span style="color: #68BC03;">&#10004;</span><br>
-                            Adaptados a smartphones e tablets <span
-                                style="color: #68BC03;">&#10004;</span><br>
-                            De fácil navegação <span style="color: #68BC03;">&#10004;</span>
-                        </p><br>
-                        <a href="#" id="botao-2">
-                            <p><a id="btnOrcamento2">Orçamento</a></p>
-                        </a>
-                    </div>
-
-                    <div id="plano-3">
-                        <h1 id="titulo-3">Projetos sob medida!</h1><br>
-                        <p id="subtitulo-3">
-                            Atinja os resultados que sua empresa precisa <span
-                                style="color: #68BC03;">&#10004;</span><br>
-                            Temos o melhor custo x benefício <span
-                                style="color: #68BC03;">&#10004;</span><br>
-                            Você vai se surpreender <span style="color: #68BC03;">&#10004;</span>
-                        </p><br>
-                        <a href="#" id="botao-3">
-                            <p><a id="btnOrcamento3">Orçamento</a></p>
-                        </a>
-                    </div>
-
                 </div>
-
-                <div class="seletores">
-                    <input onclick="selectText('1', '2', '3')" type="radio" name="seletor"
-                        id="seletor1">
-                    <input onclick="selectText('2', '3', '1')" type="radio" name="seletor"
-                        id="seletor2">
-                    <input onclick="selectText('3', '1', '2')" type="radio" name="seletor"
-                        id="seletor3">
-                </div>
-
             </div>
-
         </div>
     </div>
     <!--FIM BANNER PRINCIPAL-->
@@ -329,7 +341,7 @@
         </div>
 
         <div class="dados-cadastrais">
-            <pre>&#9742; (99) 9 9999-99999 &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp Cidade  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp UF</pre>
+            <pre>&#9742; (34) 9 8851-9380 &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp Uberlândia  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp MG</pre>
         </div>
 
         <!--INICIO ICONES REDES SOCIAIS-->
