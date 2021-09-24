@@ -20,7 +20,7 @@
     height: 10vh;
     text-align: center;
     line-height: 10vh;
-    font-size: 2.5vh;
+    font-size: 2.2vh;
     color: #48B4C5;
   }
   
@@ -97,14 +97,12 @@
     opacity: 0.9;
     width: 34.5vw;
     height: 35vh;
-    border-radius: 0 150px 0 150px;
+    border-radius: 0 90px 0 90px;
     color: white;
-    padding-right: 3%;
-    padding-left: 5%;
-    padding-top: 2%;
-    padding-bottom: 1%;
     position: relative;
     overflow: hidden;
+    line-height: 1vh;
+    padding: 2vh 1vw 5vh 1vw;
 }
 
 #textos-banner-principal {
@@ -115,17 +113,13 @@
     width: 110vw;
 }
 
-#textos-banner-principal div {
-    width: 34.5vw;
-}
-
 #transp-1 h1 {
-    font-size: 3vh;
+    font-size: 3vh !important;
 }
 
 #transp-1 p {
-    font-size: 2.5vh;
-    text-align: justify;
+    text-align: left;
+    width: auto;
 }
 
 #transp-1 a {
@@ -135,14 +129,15 @@
 
 /* PLANO 1 */
 
+
 #btnOrcamento {
     background-color: #3CB4C5;
     border-radius: 5px;
     padding: 5px;
     border: 1px solid transparent;
     width: 6vw;
-    text-align: center;
     font-size: 1.2rem;
+    text-align: right !important;
 }
 
 #btnOrcamento:hover {
